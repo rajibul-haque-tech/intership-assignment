@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View the complete student records directory with roll numbers, department marks, and grade achievements.">
+  <title>EduPulse - Student Directory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="index.html" class="logo" id="navLogo">
+        <div class="logo-icon">⚡</div>
+        <span>EduPulse</span>
+      </a>
+      <ul class="nav-links" id="mainNav">
+        <li><a href="index.html" class="nav-link" id="navHome">🏠 Home</a></li>
+        <li><a href="students.html" class="nav-link active" id="navStudents">🎓 Student Directory</a></li>
+        <li><a href="register.html" class="nav-link" id="navRegister">📝 Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="page-header">
+      <div class="page-title-group">
+        <h1 id="pageTitle">Student Directory & Academic Performance</h1>
+        <p>Comprehensive list of registered students, roll numbers, and performance marks.</p>
+      </div>
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="studentSearch" placeholder="Search by name, roll no, or department..." aria-label="Search Students">
+      </div>
+    </div>
+
+    <!-- Student Data Table Section -->
+    <section class="table-card" id="studentTableSection">
+      <div class="table-responsive">
+        <table class="custom-table" id="studentTable">
+          <thead>
+            <tr>
+              <th scope="col">Roll Number</th>
+              <th scope="col">Student Name</th>
+              <th scope="col">Department / Specialization</th>
+              <th scope="col">Marks (Out of 100)</th>
+              <th scope="col">Performance Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="roll-tag">2026-CS-001</span></td>
+              <td>
+                <div class="student-info">
+                  <div class="avatar-circle">RH</div>
+                  <strong>Rajibul Haque</strong>
+                </div>
+              </td>
+              <td>Computer Science & Engineering</td>
+              <td><strong>96 / 100</strong></td>
+              <td><span class="status-badge badge-excellent">A+ Excellent</span></td>
+            </tr>
+            <tr>
+              <td><span class="roll-tag">2026-CS-002</span></td>
+              <td>
+                <div class="student-info">
+                  <div class="avatar-circle" style="background: linear-gradient(135deg, #10b981, #059669);">AS</div>
+                  <strong>Ananya Sharma</strong>
+                </div>
+              </td>
+              <td>Artificial Intelligence & Data Science</td>
+              <td><strong>91 / 100</strong></td>
+              <td><span class="status-badge badge-excellent">A+ Excellent</span></td>
+            </tr>
+            <tr>
+              <td><span class="roll-tag">2026-IT-003</span></td>
+              <td>
+                <div class="student-info">
+                  <div class="avatar-circle" style="background: linear-gradient(135deg, #0ea5e9, #0284c7);">VP</div>
+                  <strong>Vikram Patel</strong>
+                </div>
+              </td>
+              <td>Information Technology</td>
+              <td><strong>84 / 100</strong></td>
+              <td><span class="status-badge badge-good">A Very Good</span></td>
+            </tr>
+            <tr>
+              <td><span class="roll-tag">2026-EC-004</span></td>
+              <td>
+                <div class="student-info">
+                  <div class="avatar-circle" style="background: linear-gradient(135deg, #f59e0b, #d97706);">SR</div>
+                  <strong>Sneha Roy</strong>
+                </div>
+              </td>
+              <td>Electronics & Communication</td>
+              <td><strong>88 / 100</strong></td>
+              <td><span class="status-badge badge-good">A Very Good</span></td>
+            </tr>
+            <tr>
+              <td><span class="roll-tag">2026-ME-005</span></td>
+              <td>
+                <div class="student-info">
+                  <div class="avatar-circle" style="background: linear-gradient(135deg, #8b5cf6, #7c3aed);">MK</div>
+                  <strong>Manish Kumar</strong>
+                </div>
+              </td>
+              <td>Mechanical Engineering</td>
+              <td><strong>78 / 100</strong></td>
+              <td><span class="status-badge badge-average">B Good</span></td>
+            </tr>
+            <tr>
+              <td><span class="roll-tag">2026-CS-006</span></td>
+              <td>
+                <div class="student-info">
+                  <div class="avatar-circle" style="background: linear-gradient(135deg, #ec4899, #db2777);">PD</div>
+                  <strong>Pooja Das</strong>
+                </div>
+              </td>
+              <td>Computer Science & Engineering</td>
+              <td><strong>94 / 100</strong></td>
+              <td><span class="status-badge badge-excellent">A+ Excellent</span></td>
+            </tr>
+            <tr>
+              <td><span class="roll-tag">2026-EE-007</span></td>
+              <td>
+                <div class="student-info">
+                  <div class="avatar-circle" style="background: linear-gradient(135deg, #64748b, #475569);">RS</div>
+                  <strong>Rohan Sen</strong>
+                </div>
+              </td>
+              <td>Electrical Engineering</td>
+              <td><strong>72 / 100</strong></td>
+              <td><span class="status-badge badge-average">B Average</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 EduPulse Academic Systems. Built with modern HTML5, CSS3, & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

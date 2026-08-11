@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register a new student into the EduPulse portal with personal details, roll number, and department.">
+  <title>EduPulse - Student Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="index.html" class="logo" id="navLogo">
+        <div class="logo-icon">⚡</div>
+        <span>EduPulse</span>
+      </a>
+      <ul class="nav-links" id="mainNav">
+        <li><a href="index.html" class="nav-link" id="navHome">🏠 Home</a></li>
+        <li><a href="students.html" class="nav-link" id="navStudents">🎓 Student Directory</a></li>
+        <li><a href="register.html" class="nav-link active" id="navRegister">📝 Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <div class="form-container">
+      <div class="form-header">
+        <h1 id="formTitle">Student Registration Form</h1>
+        <p>Fill in the required information to enroll a new student into the academic database.</p>
+      </div>
+
+      <!-- Registration Form -->
+      <form id="registrationForm" class="form-grid">
+        <!-- Input: Full Name -->
+        <div class="form-group">
+          <label for="fullName" class="form-label">Full Name <span class="required-star">*</span></label>
+          <input type="text" id="fullName" class="form-control" placeholder="e.g. Rajibul Haque" required>
+        </div>
+
+        <!-- Input: Roll Number -->
+        <div class="form-group">
+          <label for="rollNumber" class="form-label">Roll Number / ID <span class="required-star">*</span></label>
+          <input type="text" id="rollNumber" class="form-control" placeholder="e.g. 2026-CS-008" required>
+        </div>
+
+        <!-- Input: Email Address -->
+        <div class="form-group">
+          <label for="email" class="form-label">Email Address <span class="required-star">*</span></label>
+          <input type="email" id="email" class="form-control" placeholder="student@university.edu" required>
+        </div>
+
+        <!-- Input: Phone Number -->
+        <div class="form-group">
+          <label for="phone" class="form-label">Contact Number <span class="required-star">*</span></label>
+          <input type="tel" id="phone" class="form-control" placeholder="+91 98765 43210" required>
+        </div>
+
+        <!-- Select: Department -->
+        <div class="form-group">
+          <label for="department" class="form-label">Department / Course <span class="required-star">*</span></label>
+          <select id="department" class="form-control" required>
+            <option value="" disabled selected>Select Department</option>
+            <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+            <option value="Artificial Intelligence & Data Science">Artificial Intelligence & Data Science</option>
+            <option value="Information Technology">Information Technology</option>
+            <option value="Electronics & Communication">Electronics & Communication</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+          </select>
+        </div>
+
+        <!-- Select: Academic Year -->
+        <div class="form-group">
+          <label for="academicYear" class="form-label">Academic Year <span class="required-star">*</span></label>
+          <select id="academicYear" class="form-control" required>
+            <option value="" disabled selected>Select Year</option>
+            <option value="1st Year">1st Year (Freshman)</option>
+            <option value="2nd Year">2nd Year (Sophomore)</option>
+            <option value="3rd Year">3rd Year (Junior)</option>
+            <option value="4th Year">4th Year (Senior)</option>
+          </select>
+        </div>
+
+        <!-- Radio Buttons: Gender -->
+        <div class="form-group full-width">
+          <label class="form-label">Gender <span class="required-star">*</span></label>
+          <div class="radio-group">
+            <label class="custom-option">
+              <input type="radio" name="gender" value="Male" required> Male
+            </label>
+            <label class="custom-option">
+              <input type="radio" name="gender" value="Female"> Female
+            </label>
+            <label class="custom-option">
+              <input type="radio" name="gender" value="Other"> Other
+            </label>
+          </div>
+        </div>
+
+        <!-- Checkbox: Terms Agreement -->
+        <div class="form-group full-width">
+          <label class="custom-option">
+            <input type="checkbox" id="termsCheck" required>
+            <span>I confirm that all provided student details are accurate and complete.</span>
+          </label>
+        </div>
+
+        <!-- Form Action Buttons -->
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" id="btnSubmitForm">🚀 Submit Registration</button>
+          <button type="reset" class="btn btn-outline" id="btnResetForm">🔄 Reset Form</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 EduPulse Academic Systems. Built with modern HTML5, CSS3, & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
