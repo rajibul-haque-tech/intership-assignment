@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+</head>
+<body>
+
+  <h1>Student Registration Form</h1>
+  <p>Please complete the registration form below to submit your details.</p>
+
+  <form action="#" method="post">
+    
+    <!-- Full Name Input -->
+    <p>
+      <label for="fullName">Full Name:</label><br>
+      <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+    </p>
+
+    <!-- Email Input -->
+    <p>
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" placeholder="student@example.com" required>
+    </p>
+
+    <!-- Roll Number Input -->
+    <p>
+      <label for="rollNumber">Roll Number:</label><br>
+      <input type="text" id="rollNumber" name="rollNumber" placeholder="e.g. 2026-CS-001" required>
+    </p>
+
+    <!-- Department Select Dropdown -->
+    <p>
+      <label for="department">Department / Specialization:</label><br>
+      <select id="department" name="department" required>
+        <option value="" disabled selected>-- Select Department --</option>
+        <option value="Computer Science">Computer Science & Engineering</option>
+        <option value="Artificial Intelligence">Artificial Intelligence & Data Science</option>
+        <option value="Information Technology">Information Technology</option>
+        <option value="Electronics">Electronics & Communication</option>
+        <option value="Mechanical Engineering">Mechanical Engineering</option>
+      </select>
+    </p>
+
+    <!-- Academic Year Select Dropdown -->
+    <p>
+      <label for="year">Academic Year:</label><br>
+      <select id="year" name="year" required>
+        <option value="" disabled selected>-- Select Year --</option>
+        <option value="1st Year">1st Year</option>
+        <option value="2nd Year">2nd Year</option>
+        <option value="3rd Year">3rd Year</option>
+        <option value="4th Year">4th Year</option>
+      </select>
+    </p>
+
+    <!-- Submit & Reset Buttons -->
+    <p>
+      <input type="submit" value="Submit Registration">
+      <input type="reset" value="Reset Form">
+    </p>
+
+  </form>
+
+  <p><a href="index.html">Back to Main Page</a></p>
+
+</body>
+</html>
